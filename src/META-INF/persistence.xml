@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="MyJPA" transaction-type="RESOURCE_LOCAL">
+		<class>de.webapp.model.User</class>
+		<class>de.webapp.model.Profile</class>
+		<class>de.webapp.model.Nachricht</class>
+		<class>de.webapp.model.Adresse</class>
+		<class>de.webapp.model.Branche</class>
+		<class>de.webapp.model.Handelsplatz</class>
+		<class>de.webapp.model.Wertpapier</class>
+		<class>de.webapp.model.Kurs</class>
+		<class>de.webapp.model.Aktie</class>
+		<class>de.webapp.model.Unternehmensdaten</class>
+		<class>de.webapp.model.Rente</class>
+		<class>de.webapp.model.Fonds</class>
+		<class>de.webapp.model.Fondsanteil</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@orahost:1521:infdb"/>
+			<property name="javax.persistence.jdbc.user" value="eggerden"/>
+			<property name="javax.persistence.jdbc.password" value="db456"/>
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
+
